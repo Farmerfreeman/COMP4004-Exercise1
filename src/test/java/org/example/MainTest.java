@@ -16,4 +16,14 @@ class MainTest {
                 () -> assertTrue(Main.c > 0));
 
     }
+
+    @Test
+    @DisplayName("Ensure inputs are less than 20")
+    void LessThan20() {
+
+        assertAll(() -> assertTrue(Main.a < 20),
+                () -> assertTrue(Main.b < 20),
+                () -> assertTrue(Main.c < 20));
+
+    }
 }
