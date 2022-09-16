@@ -10,6 +10,7 @@ class MainTest {
     @Test
     @DisplayName("Ensure inputs are positive")
     void positive() {
+
         assertAll(() -> assertTrue(Main.a > 0),
                 () -> assertTrue(Main.b > 0),
                 () -> assertTrue(Main.c > 0));
