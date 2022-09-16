@@ -7,25 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
-    @Test
-    @DisplayName("Ensure inputs are positive")
-    void positive() {
 
-        assertAll(() -> assertTrue(Main.a > 0),
-                () -> assertTrue(Main.b > 0),
-                () -> assertTrue(Main.c > 0));
 
-    }
 
-    @Test
-    @DisplayName("Ensure inputs are less than 20")
-    void LessThan20() {
-
-        assertAll(() -> assertTrue(Main.a < 20),
-                () -> assertTrue(Main.b < 20),
-                () -> assertTrue(Main.c < 20));
-
-    }
 
     @Test
     @DisplayName("If all 3 inputs are equal, return equilateral.")
