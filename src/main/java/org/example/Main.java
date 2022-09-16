@@ -18,7 +18,9 @@ public class Main {
             return "isosceles";
         }
 
-        
+        else if(a > 20 || b > 20 || c > 20 || a < 0 || b < 0 || c < 0 || a >= b + c || b >= a + c || c >= a + b){
+            return "invalid";
+        }
 
         return "";
     }
