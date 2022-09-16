@@ -14,6 +14,9 @@ public class Main {
             return "equilateral";
         }
 
+        else if(a==b || a == c || b == c){
+            return "isosceles";
+        }
 
         return "";
     }
