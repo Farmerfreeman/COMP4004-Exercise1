@@ -43,4 +43,14 @@ class MainTest {
                 () -> assertTrue(Main.kindOfTriangle(5, 7, 5) == "isosceles"));
 
     }
+
+    @Test
+    @DisplayName("If input is invalid, return invalid")
+    void invalid() {
+
+        assertAll(() -> assertTrue(Main.kindOfTriangle(21, 5, 7) == "invalid"),
+                () -> assertTrue(Main.kindOfTriangle(-2, 7, 5) == "invalid"),
+                () -> assertTrue(Main.kindOfTriangle(19, 1, 1) == "invalid"));
+
+    }
 }
