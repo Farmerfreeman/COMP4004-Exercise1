@@ -26,4 +26,12 @@ class MainTest {
                 () -> assertTrue(Main.c < 20));
 
     }
+
+    @Test
+    @DisplayName("If all 3 inputs are equal, return equilateral.")
+    void equilateral() {
+
+        assertAll(() -> assertTrue(Main.kindOfTriangle(5, 5, 5) == "equilateral"));
+
+    }
 }

@@ -11,6 +11,8 @@ public class Main {
 
     public static String kindOfTriangle (int a, int b, int c){
 
+
+
         return "";
     }
 
