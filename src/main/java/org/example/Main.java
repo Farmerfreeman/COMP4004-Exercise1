@@ -10,7 +10,9 @@ public class Main {
     public static int c = 4;
 
     public static String kindOfTriangle (int a, int b, int c){
-
+        if(a==b && b==c){
+            return "equilateral";
+        }
 
 
         return "";
