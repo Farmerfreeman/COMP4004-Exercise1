@@ -45,6 +45,15 @@ class MainTest {
     }
 
     @Test
+    @DisplayName("If no pairs of sides are equal, return scalene.")
+    void scalene() {
+
+        assertAll(() -> assertTrue(Main.kindOfTriangle(5, 5, 6) == "scalene"),
+                () -> assertTrue(Main.kindOfTriangle(5, 7, 9) == "scalene"));
+
+    }
+
+    @Test
     @DisplayName("If input is invalid, return invalid")
     void invalid() {
 
