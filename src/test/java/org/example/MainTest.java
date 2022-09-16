@@ -34,4 +34,13 @@ class MainTest {
         assertAll(() -> assertTrue(Main.kindOfTriangle(5, 5, 5) == "equilateral"));
 
     }
+
+    @Test
+    @DisplayName("If a pair of sides are equal, return isosceles.")
+    void isosceles() {
+
+        assertAll(() -> assertTrue(Main.kindOfTriangle(5, 5, 7) == "isosceles"),
+                () -> assertTrue(Main.kindOfTriangle(5, 7, 5) == "isosceles"));
+
+    }
 }
