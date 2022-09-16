@@ -12,6 +12,6 @@ public class Main {
     public static int c;
 
     public String kindOfTriangle (int a, int b, int c){
-
+        return "";
     }
 }
